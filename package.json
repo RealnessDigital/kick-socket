@@ -1,0 +1,33 @@
+{
+  "name": "kick-ws",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Subscribe to kick.com WebSocket to handle the chat or channel events.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realnessdigital/kick-ws.git"
+  },
+  "keywords": [
+    "kick.com",
+    "live",
+    "chat",
+    "events",
+    "socket"
+  ],
+  "author": "rlns.de",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/realnessdigital/kick-ws/issues"
+  },
+  "homepage": "https://github.com/realnessdigital/kick-ws#readme",
+  "dependencies": {
+    "events": "^3.3.0",
+    "got-scraping": "^4.0.3",
+    "isomorphic-ws": "^5.0.0",
+    "ws": "^8.16.0"
+  }
+}
