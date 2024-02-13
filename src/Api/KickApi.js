@@ -1,6 +1,4 @@
-import { gotScraping } from 'got-scraping';
-
-
+import { getRequester } from './RequestWrapper.js';
 
 const channels = {};
 
@@ -12,7 +10,7 @@ export const getChannel = (channelName) => new Promise(async (resolve, reject) =
 		resolve(channels[channelName]);
 
 	} else {
-		gotScraping.get(`https://kick.com/api/v2/channels/${channelName}`)
+		(await getRequester()).get(`https://kick.com/api/v2/channels/${channelName}`)
 			.then(({ body }) => {
 
 				try{
